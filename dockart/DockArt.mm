@@ -1,7 +1,7 @@
 #import <Preferences/PSListController.h>
 #import <Preferences/PSSpecifier.h>
-#import <Foundation/NSConcreteNotification.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <spawn.h>
 
 @interface DockArtListController: PSListController  <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 }
@@ -19,8 +19,14 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.twitter.com/sst1337/"]];
 } 
 
+- (void)linkToMyTwitterUpdate {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.twitter.com/aJBboCydia/"]];
+} 
+
 - (void)respring {
-    system("killall SpringBoard");
+     pid_t pid;
+    const char* args[] = {"killall", "backboardd", NULL};
+    posix_spawn(&pid, "/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
 } 
 
 - (void)selectPhoto {
@@ -29,10 +35,6 @@
 
 }
 
-- (void)_returnKeyPressed:(NSConcreteNotification *)notification {
-	[self.view endEditing:YES];
-	[super _returnKeyPressed:notification];
-}
 
 - (BOOL) startMediaBrowserFromViewController: (UIViewController*) controller
 

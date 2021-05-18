@@ -1,4 +1,5 @@
-#import "SpringBoard/SBWallpaperEffectView.h"
+#import <UIKit/UIKit.h>
+#import <SpringBoard/SBWallpaperEffectView.h>
 
 @interface SBDockView
 

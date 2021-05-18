@@ -98,11 +98,25 @@
 			<key>label</key>
 			<string>Developer (@sst1337) on Twitter</string>
 		</dict>
+				<dict>
+			<key>action</key>
+			<string>linkToMyTwitterUpdate</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Support iOS14 and arm64e (@aJBboCydia) on Twitter</string>
+		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>© 2015-2016 sst1337</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>© 2021 aJBboCydia</string>
 		</dict>
 
 	</array>

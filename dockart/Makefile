@@ -1,6 +1,6 @@
-ARCHS = armv7 armv7s arm64
+ARCHS = armv7 armv7s arm64 arm64e
 
-include theos/makefiles/common.mk
+include /opt/theos/makefiles/common.mk
 
 BUNDLE_NAME = DockArt
 DockArt_FILES = DockArt.mm

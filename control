@@ -1,0 +1,15 @@
+Name: DockArt
+Package: com.sst1337.dockart
+Priority: optional
+Depends: mobilesubstrate, firmware (>= 8.0), preferenceloader
+Version: 2.0.3-3
+Architecture: iphoneos-arm
+Description: Add an image to your dock!
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=dockartDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=dockartDp
+Sponsor: thebigboss.org <http://thebigboss.org>
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: sst1337 <1337sst@gmail.com>
+Section: Tweaks
+dev: sst1337
+Icon: file:///Library/PreferenceBundles/DockArt.bundle/DockArt@2x.png

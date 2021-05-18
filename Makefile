@@ -1,7 +1,9 @@
-ARCHS = armv7 armv7s arm64
+ARCHS = armv7 armv7s arm64 arm64e
 GO_EASY_ON_ME = 1
 
-include theos/makefiles/common.mk
+THEOS_DEVICE_IP = 192.168.1.89
+
+include /opt/theos/makefiles/common.mk
 
 TWEAK_NAME = DockArt
 DockArt_FILES = Tweak.xm
@@ -15,3 +17,7 @@ after-install::
 	install.exec "killall -9 SpringBoard"
 SUBPROJECTS += dockart
 include $(THEOS_MAKE_PATH)/aggregate.mk
+
+
+install2::
+		install2.exec
